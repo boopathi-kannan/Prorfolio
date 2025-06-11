@@ -866,21 +866,24 @@ text-align: center;
 }
 
 .social-links {
-margin-bottom: 20px;
+  display: flex;
+  justify-content: center;  /* horizontally center icons */
+  align-items: center;
+  gap: 20px;  /* space between icons */
+  margin-bottom: 20px;
 }
 
 .social-links a {
-display: inline-block;
-color: var(--text-primary);
-margin: 0 10px;
-font-size: 1.5rem;
-transition: color 0.3s ease, transform 0.3s ease;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover {
-color: var(--accent-color);
-transform: translateY(-3px);
+  color: var(--accent-color);
+  transform: translateY(-3px);
 }
+
 
 .footer-text {
 color: var(--text-secondary);
@@ -1110,38 +1113,6 @@ margin-right: 0;
   border-radius: 8px;
   color: blue;
 }
-.footer {
-  background-color: #222; /* Optional: dark background for footer */
-  color: #fff;
-  padding: 20px 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center; /* centers footer text */
-}
-
-.social-links {
-  display: flex;
-  justify-content: center; /* centers icons horizontally */
-  gap: 20px; /* spacing between icons */
-  margin-bottom: 10px;
-}
-
-.social-links a {
-  color: #fff;
-  font-size: 24px;
-  transition: color 0.3s;
-}
-
-.social-links a:hover {
-  color: #00aced; /* LinkedIn-like hover effect */
-}
-
-.footer-text {
-  font-size: 14px;
-}
 
 
 </style>
@@ -1177,7 +1148,7 @@ margin-right: 0;
 <h2>Boopathi K</h2>
 <p>A motivated full stack developer with hands-on experience in building real-world applications using React, Node.js, Python, and MySQL. Passionate about learning new technologies and solving problems.</p>
 <a href="#projects" class="btn">View Projects</a>
-<a href="https://acrobat.adobe.com/id/urn:aaid:sc:ap:440bdb15-d7a2-4d3c-b926-5e849a8443e1" class="btn" >Download Resume</a>
+<a href="https://acrobat.adobe.com/id/urn:aaid:sc:ap:440bdb15-d7a2-4d3c-b926-5e849a8443e1" class="btn" >View Resume</a>
 </div>
 </div>
 </section>
