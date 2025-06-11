@@ -867,16 +867,13 @@ text-align: center;
 
 .social-links {
   display: flex;
-  justify-content: flex-start; /* Aligns entire block to left */
-  align-items: center;         /* Vertically centers icons */
-  gap: 20px;                   /* Space between icons */
+  justify-content: center;  /* horizontally center icons */
+  align-items: center;
+  gap: 20px;  /* space between icons */
   margin-bottom: 20px;
 }
 
 .social-links a {
-  display: flex;               /* Ensure icon is centered inside <a> */
-  align-items: center;         /* Vertical center inside the anchor */
-  justify-content: center;
   color: var(--text-primary);
   font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -887,12 +884,6 @@ text-align: center;
   transform: translateY(-3px);
 }
 
-
-@media (max-width: 600px) {
-  .social-links {
-    flex-wrap: wrap;
-  }
-}
 
 
 .footer-text {
@@ -1392,11 +1383,10 @@ margin-right: 0;
   <p><i class="fas fa-envelope"></i> boopathikannan04@gmail.com</p>
   <p><i class="fas fa-phone"></i> 8946072879</p>
   <p><i class="fas fa-map-marker-alt"></i> No.2/491 Kongampatti, Melur, Madurai-625102</p>
- <div class="social-links">
-<a href="https://www.linkedin.com/in/boopathi-kannan-4a7ba1268/" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="https://github.com/boopathi-kannan" target="_blank"><i class="fab fa-github"></i></a>
-
-</div>
+  <div class="social-links">
+      <a href="https://www.linkedin.com/in/boopathi-kannan-4a7ba1268/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/boopathi-kannan" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
 </div>
 </div>
 </div>
