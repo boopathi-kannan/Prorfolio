@@ -867,13 +867,16 @@ text-align: center;
 
 .social-links {
   display: flex;
-  justify-content: center;  /* horizontally center icons */
-  align-items: center;
-  gap: 20px;  /* space between icons */
+  justify-content: flex-start; /* Aligns entire block to left */
+  align-items: center;         /* Vertically centers icons */
+  gap: 20px;                   /* Space between icons */
   margin-bottom: 20px;
 }
 
 .social-links a {
+  display: flex;               /* Ensure icon is centered inside <a> */
+  align-items: center;         /* Vertical center inside the anchor */
+  justify-content: center;
   color: var(--text-primary);
   font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -883,6 +886,7 @@ text-align: center;
   color: var(--accent-color);
   transform: translateY(-3px);
 }
+
 
 @media (max-width: 600px) {
   .social-links {
